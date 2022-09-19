@@ -16,7 +16,7 @@ body{
     overflow: hidden;
 }
 
-header, header dl, header dl dd, main button, footer, footer div{
+header, header dl, header dl dd, main button, footer, footer div, footer a{
     display: flex;
     align-items: center;
 }
@@ -85,7 +85,6 @@ main button:hover{
 
 main .pizza{
     color: var(--red);
-    cursor: pointer;
 }
 
 main .senai{
@@ -107,8 +106,11 @@ footer{
     margin-bottom: 10px;
 }
 
-footer div{
+footer a{
     cursor: pointer;
+    color: var(--black);
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 footer .leo:hover{
