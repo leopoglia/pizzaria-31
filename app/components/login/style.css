@@ -24,15 +24,6 @@ body form{
     margin-top: 70px;
 }
 
-body form::before{
-    content: '';
-    position: absolute;
-    width: 500px;
-    height: 5px;
-    margin-top: -55px;
-    background-color: var(--green);
-}
-
 body form div{
     width: 100%;
     display: inline;
