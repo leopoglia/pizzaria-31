@@ -1,7 +1,9 @@
 :root{
     --red: rgb(255, 22, 22);
+    --redhover: rgb(197, 0, 0);
     --green: rgb(0, 128, 55);
-    --black: #000;
+    --greenhover: rgb(0, 109, 47);
+    --black: rgb(32, 32, 32);
     --white: #fff;
 }
 
@@ -35,7 +37,7 @@ header img{
 }
 
 header dd .material-symbols-outlined{
-    font-size: 35px;
+    font-size: 30px;
     color: var(--black);
     cursor: pointer;
     transition: 0.3s;
@@ -55,6 +57,7 @@ header dl dd{
 
 
 main h1{
+    color: var(--black);
     font-size: 90px;
     margin-left: 50px;
     margin-bottom: 10px;
@@ -109,6 +112,7 @@ footer{
 footer a{
     cursor: pointer;
     color: var(--black);
+    fill: var(--black);
     text-decoration: none;
     transition: 0.3s;
 }
@@ -129,6 +133,7 @@ footer span{
 }
 
 footer .ionicon{
+    cursor: pointer;
     margin-left: 5px;
     width: 20px;
 }
