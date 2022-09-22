@@ -1,5 +1,6 @@
 * {
     color: var(--black);
+    font-weight: 500;
 }
 
 body {
@@ -149,7 +150,25 @@ main .informacoes-pizza .pizza-amostra {
     justify-content: center;
     box-shadow: 0px 0px 10px black;
     transition: 0.3s;
+    cursor: pointer;
 }
+
+main .informacoes-pizza .pizza-amostra:hover{
+    animation: spinner 2s;
+}
+
+@keyframes spinner {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
 
 main .informacoes-pizza .queijo {
     position: absolute;
@@ -158,6 +177,7 @@ main .informacoes-pizza .queijo {
     border-radius: 200px;
     background-color: #ccc;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 main .flex {
