@@ -6,6 +6,13 @@ function cadastrarUsuario(){
     let email = document.getElementById('email').value;
     let telefone = document.getElementById('telefone').value;
 
+    let form = document.querySelector('form');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        console.log('Deu certo')
+    })
+
     let usuario = {
         nome: nome,
         endereco: endereco,
@@ -14,5 +21,5 @@ function cadastrarUsuario(){
     }
 
     localStorage.setItem("usuario", JSON.stringify(usuario));
-
+    window.location.href = "/Users/leonardo_poglia/Documents/GitHub/pizzaria-31/app/index.html";
 }
