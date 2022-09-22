@@ -1,0 +1,195 @@
+* {
+    color: var(--black);
+}
+
+body {
+    overflow: auto !important;
+
+}
+
+body main {
+    margin: 20px 50px;
+}
+
+body .pequena,
+body .media,
+body .grande {
+    background-color: var(--redhover);
+    border-radius: 120px;
+    cursor: pointer;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+body .pequena:hover,
+body .media:hover,
+body .grande:hover {
+    background-color: var(--greenhover);
+}
+
+body .pequena {
+    width: 80px;
+    height: 80px;
+}
+
+body .media {
+    width: 100px;
+    height: 100px;
+}
+
+body .grande {
+    width: 120px;
+    height: 120px;
+}
+
+body .tamanho-pizza {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+}
+
+main .cadastro-pedido {
+    width: 60%;
+}
+
+label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(219, 219, 219);
+}
+
+label:hover input~.check {
+    background-color: #ccc;
+}
+
+label input:checked~.check {
+    background-color: var(--redhover);
+}
+
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+label input:checked~.check:after {
+    display: block;
+}
+
+label .check:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+main .informacoes-pizza {
+    top: 0;
+    position: fixed;
+    right: 0;
+    width: 20%;
+    margin-top: 150px;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+main .informacoes-pizza h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .informacoes-pizza .pizza-amostra {
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    background-color: rgb(213, 163, 103);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px black;
+}
+
+main .informacoes-pizza .queijo {
+    content: '';
+    position: absolute;
+    width: 228px;
+    height: 228px;
+    border-radius: 200px;
+    background-color: rgb(163, 132, 53);
+}
+
+main .flex {
+    display: flex;
+}
+
+main .flex div {
+    width: 50%;
+}
+
+main .informacoes-pizza button {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+main .informacoes-pizza button:hover {
+    background-color: var(--greenhover);
+}
+
+main .informacoes-pizza .fundo-pizza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
