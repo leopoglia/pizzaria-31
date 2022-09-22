@@ -1,9 +1,9 @@
-*{
+* {
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
+body {
     margin: 0;
     width: 100%;
     min-height: 100vh;
@@ -11,7 +11,27 @@ body{
     justify-content: center;
 }
 
-body::after{
+body .barra {
+    width: 500px;
+    height: 8px;
+    background-color: var(--greenhover);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    animation: barra 3s infinite linear ;
+}
+
+@keyframes barra {
+    0% {
+        margin-left: -500px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+    
+
+body::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -19,35 +39,36 @@ body::after{
     background-color: var(--green);
 }
 
-body .logo-login{
+body .logo-login {
     display: flex;
     justify-content: center;
 }
 
 
-body img{
+body img {
     width: 100px;
 }
 
-body form{
+body form {
     width: 500px;
     max-width: 500px;
     margin-top: 70px;
 }
 
-body form div{
+body form div {
     width: 100%;
     display: inline;
 }
 
-body form input, body form button{
+body form input,
+body form button {
     width: 100%;
     padding: 0 15px;
     height: 40px;
     margin-bottom: 15px;
 }
 
-body form button{
+body form button {
     background-color: var(--green);
     border: none;
     color: var(--white);
@@ -57,22 +78,22 @@ body form button{
     cursor: pointer;
 }
 
-body form button:hover{
+body form button:hover {
     background-color: var(--greenhover);
 }
 
-body form input{
+body form input {
     border: 2px solid var(--black);
     border-radius: 3px;
 }
 
-body form input:focus{
+body form input:focus {
     border: 2px solid var(--green);
     border-radius: 3px;
     outline: none;
 }
 
-body form label{
+body form label {
     cursor: text;
     position: absolute;
     margin-left: 15px;
@@ -80,7 +101,8 @@ body form label{
     transition: 0.3s;
 }
 
-body form input:focus ~ label, input:valid ~ label{
+body form input:focus~label,
+input:valid~label {
     margin-top: -65px;
     margin-left: 10px;
     font-size: 15px;
@@ -88,17 +110,17 @@ body form input:focus ~ label, input:valid ~ label{
     padding: 0 5px;
 }
 
-body form .esqueceu-senha{
+body form .esqueceu-senha {
     color: var(--black);
     font-weight: 500;
     text-decoration: none;
 }
 
-body form .esqueceu-senha:hover{
+body form .esqueceu-senha:hover {
     text-decoration: underline 2px var(--green);
 }
 
-body .pizza-login{
+body .pizza-login {
     position: fixed;
     bottom: 0;
     width: 800px;
