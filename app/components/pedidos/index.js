@@ -35,11 +35,15 @@ function sabor(sabor, $event) {
     tamanhoPizza(0);
     if ($event.path[0].checked == true) {
         if (sabor == 1) {
-            queijo.style = queijo.style.cssText + "background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190513/pngtree-cheese-background-image_110810.jpg'); background-size: 100%";
+            queijo.style = queijo.style.cssText + "background-image: url('https://i.imgur.com/QPJlTqD.png'); background-size: 110%";
         } else if (sabor == 2) {
-            queijo.style = queijo.style.cssText + "background-image: url('https://i.imgur.com/UHEFQf2.png'); background-size: 150%; background-position: -10px";
+            queijo.style = queijo.style.cssText + "background-image: url('https://i.imgur.com/97VRI0f.png'); background-size: 110%";
         }else if(sabor == 3){
-            queijo.style = queijo.style.cssText + "background-image: url('https://i.imgur.com/52v62xH.png'); background-size: 100%";
+            queijo.style = queijo.style.cssText + "background-image: url('https://i.imgur.com/52v62xH.png'); background-size: 110%";
+        }else if(sabor == 4){
+            queijo.style = queijo.style.cssText + "background-image: url('https://i.imgur.com/7yzPKqu.png'); background-size: 115%";
+        }else if(sabor == 5){
+            queijo.style = queijo.style.cssText + "background-image: url('https://i.imgur.com/jb9ywEH.png'); background-size: 115%";
         }
     }
 
