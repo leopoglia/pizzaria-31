@@ -90,40 +90,22 @@ main .senai {
     color: var(--green);
 }
 
-<<<<<<< Updated upstream
-main img {
-=======
 
-main .senai::after{
-    content: '';
-    color: #fff;
-    font-size: 50px;
-    width: 282px;
-    height: 65px;
-    position: absolute;
-    background-color: var(--green);
-    margin-left: -287px;
-    margin-top: 33px;
-
-    animation: senai 5s infinite linear;
-}
-
-
-@keyframes senai{
-    0%{
+@keyframes senai {
+    0% {
         width: 0px;
     }
-    50%{
+
+    50% {
         width: 282px;
     }
 
-    100%{
+    100% {
         width: 0px;
     }
 }
-    
-main img{
->>>>>>> Stashed changes
+
+main img {
     position: absolute;
     right: -100;
     top: 0;
