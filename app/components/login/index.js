@@ -21,5 +21,5 @@ function cadastrarUsuario(){
     }
 
     localStorage.setItem("usuario", JSON.stringify(usuario));
-    window.location.href = "/Users/leonardo_poglia/Documents/GitHub/pizzaria-31/app/index.html";
+    window.location.href = "../pedidos/index.html";
 }
