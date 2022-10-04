@@ -83,7 +83,7 @@ body form button:hover {
 }
 
 body form input {
-    border: 2px solid var(--black);
+    border: 1px solid rgb(177, 177, 177);
     border-radius: 3px;
 }
 
@@ -99,6 +99,7 @@ body form label {
     margin-left: 15px;
     margin-top: -45px;
     transition: 0.3s;
+    color: rgb(60, 60, 60);
 }
 
 body form input:focus~label,
