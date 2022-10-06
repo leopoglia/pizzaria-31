@@ -1,6 +1,6 @@
 
 
-function cadastrarUsuario(){
+function cadastrarUsuario() {
     let nome = document.getElementById('nome').value;
     let endereco = document.getElementById('endereco').value;
     let email = document.getElementById('email').value;
@@ -20,6 +20,11 @@ function cadastrarUsuario(){
         telefone: telefone
     }
 
-    localStorage.setItem("usuario", JSON.stringify(usuario));
-    window.location.href = "../pedidos/index.html";
+
+    if (usuario.nome == "" || usuario.endereco == "" || usuario.email == "" || usuario.telefone == "") {
+
+    } else {
+        localStorage.setItem("usuario", JSON.stringify(usuario));
+        window.location.href = "../pedidos/index.html";
+    }
 }
