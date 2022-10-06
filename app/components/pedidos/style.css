@@ -191,7 +191,8 @@ main .flex div {
     width: 50%;
 }
 
-main .informacoes-pizza button {
+main .informacoes-pizza button,
+#confirmacao button {
     width: 100%;
     height: 50px;
     margin-top: 10px;
@@ -207,7 +208,17 @@ main .informacoes-pizza button {
     cursor: pointer;
 }
 
-main .informacoes-pizza button:hover {
+#confirmacao h1{
+    display: flex;
+    justify-content: center;
+}
+
+#confirmacao a{
+    text-decoration: none;
+}
+
+main .informacoes-pizza button:hover,
+#confirmacao button:hover {
     background-color: var(--greenhover);
 }
 
@@ -317,12 +328,25 @@ main .caipirinha {
     }
 }
 
-#confirmacao{
+#confirmacao {
     display: none;
 }
 
+.loader img {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    margin-top: 20px;
+}
 
-@media(max-width: 930px){
+h3,
+.confirmacao span {
+    color: rgb(49, 49, 49);
+}
+
+
+@media(max-width: 930px) {
     main .flex {
         display: block;
     }
@@ -332,7 +356,7 @@ main .caipirinha {
     }
 }
 
-@media(max-width: 730px){
+@media(max-width: 730px) {
     main .informacoes-pizza {
         top: auto;
         right: auto;
@@ -341,7 +365,7 @@ main .caipirinha {
         margin-top: 0px;
     }
 
-    main .cadastro-pedido{
+    main .cadastro-pedido {
         width: 100%;
     }
 }

@@ -198,15 +198,23 @@ function comprar() {
     document.querySelector("body > div").style.display = "flex";
 
     setTimeout(() => {
-        document.querySelector("body > div > span:nth-child(1)").style.display = "none";
         document.querySelector("body > div > span:nth-child(2)").style.display = "none";
         document.querySelector("body > div > span:nth-child(3)").style.display = "none";
+        document.querySelector("body > div > span:nth-child(4)").style.display = "none";
 
         document.getElementById("confirmacao").style.display = "block !important";
 
+        mostrar();
+
     }, "3000")
+}
 
 
-
-
+function mostrar(){
+    document.querySelector("#confirmacao").style = "display: block !important";
+    usuario = JSON.parse(localStorage.getItem("usuario"));
+    document.querySelector("#confirmacao > h3 > span").innerText = usuario.nome;
+    document.querySelector("#confirmacao > h3:nth-child(3) > span").innerText = usuario.endereco;
+    document.querySelector("#confirmacao > h3:nth-child(4) > span").innerText = usuario.telefone;
+    document.querySelector("#confirmacao > h3:nth-child(5) > span").innerText = localStorage.getItem("preco");
 }
