@@ -5,6 +5,7 @@ function cadastrarUsuario() {
     let endereco = document.getElementById('endereco').value;
     let email = document.getElementById('email').value;
     let telefone = document.getElementById('telefone').value;
+    let senha = document.getElementById('senha').value;
 
     let form = document.querySelector('form');
 
@@ -21,8 +22,7 @@ function cadastrarUsuario() {
     }
 
 
-    if (usuario.nome == "" || usuario.endereco == "" || usuario.email == "" || usuario.telefone == "") {
-
+    if (usuario.nome == "" || usuario.endereco == "" || usuario.email == "" || usuario.telefone == "" || senha == "") {
     } else {
         localStorage.setItem("usuario", JSON.stringify(usuario));
         window.location.href = "../pedidos/index.html";

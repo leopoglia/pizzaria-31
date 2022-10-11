@@ -45,8 +45,12 @@
             <label for="telefone" class="labelpass">Telefone</label>
         </div>
 
+        <div>
+            <input type="text" id="senha" pattern="[A-Za-z]" title="Precisa de um caractere, numero e maiscula" required>
+            <label for="senha" class="labelpass">Senha</label>
+        </div>
 
-        <button onclick="cadastrarUsuario()" type="submit">Cadastrar</button>
+        <button  type="submit" onclick="cadastrarUsuario()">Cadastrar</button>    
     </form>
 
     <footer>
