@@ -46,11 +46,11 @@
         </div>
 
         <div>
-            <input type="text" id="senha" pattern="[A-Za-z]" title="Precisa de um caractere, numero e maiscula" required>
+            <input type="text" id="senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Precisa de um caractere, numero e maiscula. Min 8 caracteres" required>
             <label for="senha" class="labelpass">Senha</label>
         </div>
 
-        <button  type="submit" onclick="cadastrarUsuario()">Cadastrar</button>    
+        <button type="submit" onclick="cadastrarUsuario()">Cadastrar</button>    
     </form>
 
     <footer>

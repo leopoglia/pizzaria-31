@@ -18,7 +18,8 @@ function cadastrarUsuario() {
         nome: nome,
         endereco: endereco,
         email: email,
-        telefone: telefone
+        telefone: telefone,
+        senha: senha
     }
 
 
